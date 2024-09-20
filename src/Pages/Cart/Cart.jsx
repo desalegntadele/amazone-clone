@@ -9,8 +9,20 @@ import classes from './cart.module.css'
 function Cart() {
   const [{basket,user},dispatch]=useContext(DataContext);
   let total=basket.reduce((amount,item)=>{
-   return item.price*item.amount + amount
+   return( item.price*item.amount + amount)
    },0)
+    let increament=(item)=>{
+      dispatch({
+      type:Type.ADD_TO_BASKET,
+      item
+      })
+      let decrement=(id)=>{
+      dispatch({
+        type:Type.REMOVE_FROM_BASKET,
+        id 
+      })
+      }
+    }
   return (
     <LayOut>
        
@@ -21,13 +33,19 @@ function Cart() {
           <hr />
           {
             basket?.length==0?(<p>opps ! No items in your cart</p>):(basket?.map((item)=>{
-            return
-             (<ProductCard
+            return(<section>
+            <ProductCard
             product={item}
             renderDesc={true}
             flex={true}
             renderadd={false}
             />
+            <div>
+            <button onClick={()=>increament(item)}>+</button>
+            <span>{item.amount}</span>
+            <button onClick={()=>decrement(item.id)}>-</button>
+            </div>
+            </section>
             )
             }
             )) 
