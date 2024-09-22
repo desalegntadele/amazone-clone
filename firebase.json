@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "desalegn-amazon-clone",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
