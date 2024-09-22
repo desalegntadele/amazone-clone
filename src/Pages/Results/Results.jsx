@@ -17,9 +17,11 @@ function Results() {
     setIsLoading(true)
   axios.get(`${productURL}/products/category/${categoryName}`)
   .then((res)=>{  
+  // setResults(Array.isArray(res.data) ? res.data : []);
+
 setResults(res.data) 
-   setIsLoading(false)
 // console.log(res.data)
+   setIsLoading(false)
   }).catch((err)=>{
     console.log(err);
     setIsLoading(false)
@@ -50,5 +52,4 @@ setResults(res.data)
     </LayOut>
   )
 }
-
 export default Results

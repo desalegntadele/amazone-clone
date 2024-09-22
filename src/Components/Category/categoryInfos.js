@@ -1,4 +1,4 @@
-export const categoryInfo=[
+export const CategoryInfo=[
    {
     title:"Electronics",
     name:"electronics",
@@ -6,13 +6,13 @@ export const categoryInfo=[
 },
 {
 title:"Women's clothing",
-name:"Women's clothing",
+name:"women's clothing",
 imglink:"https://is4.fwrdassets.com/images/p/fw/z/ETOF-WD29_V1.jpg"
      
 },
 {
    title:"Men's Clothing",
-name:"men's Clothing",
+name:"men's clothing",
 imglink:"https://m.media-amazon.com/images/I/61eRe2FxmxL._AC_SL1300_.jpg" 
 },
 {
@@ -21,3 +21,4 @@ name:"jewelery",
 imglink:"https://m.media-amazon.com/images/I/71r7eWuCsaL._AC_UL480_FMwebp_QL65_.jpg"
 }
 ];
+ 

@@ -1,12 +1,12 @@
 import React from 'react'
-import { categoryInfo } from './categoryInfos'
+import { CategoryInfo } from './CategoryInfos'
 import CategoryCard from './CategoryCard'
 import classes from './category.module.css'
 function Category() {
   return (
     <section className={classes.category_container}>
     {
-        categoryInfo.map((info)=>(
+        CategoryInfo.map((info)=>(
         <CategoryCard  data={info}/>
         // key={info.name}
         ))

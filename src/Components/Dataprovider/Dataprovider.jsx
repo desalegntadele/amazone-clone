@@ -12,4 +12,4 @@ export const Dataprovider=({children,reducer,initialState})=>{
         </DataContext.Provider>
     )
 }
-
+//createContext,useReducer

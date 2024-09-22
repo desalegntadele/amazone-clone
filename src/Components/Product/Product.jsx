@@ -26,7 +26,8 @@ useEffect(() => {
         {
         products?.map((singleproduct)=>{
         return (
-        <ProductCard product={singleproduct} renderadd={true}
+        <ProductCard product={singleproduct} 
+        renderadd={true}
         key ={singleproduct.id}/>)
         })
         }
